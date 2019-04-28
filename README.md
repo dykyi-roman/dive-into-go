@@ -1,2 +1,1 @@
-# dive-into-go
-Dive into Golang
+# Dive into Golang
