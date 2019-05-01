@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    container_name: golang-app
+    build: .
+    command: go run main.go
+    volumes:
+      - ./src:/go/src/app
+    working_dir: /go/src/app
+    ports:
+      - "8080:${PORT}"
+    environment:
+      PORT: ${PORT}
