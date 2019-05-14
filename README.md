@@ -1,5 +1,3 @@
-# Dive into Golang
-
 # Documentation 
 
 * [Go Tour](https://tour.golang.org/welcome/1)
@@ -41,6 +39,10 @@ Go to your browser and navigate to localhost:8080
 `docker-compose up`
 
 Go to your browser and navigate to localhost:8080
+
+# Go Fresh
+
+[Fresh](https://github.com/gravityblast/fresh) is a command line tool that builds and (re)starts your web application everytime you save a Go or template file.
 
 # Go Debugging
 
