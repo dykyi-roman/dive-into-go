@@ -1,4 +1,4 @@
-package client
+package Client
 
 import (
     "net/http"
@@ -11,7 +11,9 @@ type ViewData struct {
     Title string
 }
 
-func FileUploadForm(w http.ResponseWriter, r *http.Request) {
+type UploadForm struct{}
+
+func (f UploadForm) FileUploadForm(w http.ResponseWriter, r *http.Request) {
      data := ViewData {
         Title: "Multi upload file form",
      }

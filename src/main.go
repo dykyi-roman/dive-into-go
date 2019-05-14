@@ -5,17 +5,20 @@ import (
     "net/http"
     "os"
     "./client"
-    "./server/Domain"
+    "./server/Domain"    
+    "./server/Infrastructure" 
 )
 
 func setupRoutes() {
-       http.HandleFunc("/client", func(w http.ResponseWriter, r *http.Request) {
-            client.FileUploadForm(w, r)
+       http.HandleFunc("/client", func(w http.ResponseWriter, r *http.Request) {            
+            form := Client.UploadForm{}    
+            form.FileUploadForm(w, r)
        })
 
-       http.HandleFunc("/api/v1/upload", func(w http.ResponseWriter, r *http.Request) {
-            if server.FilesUpload(w, r) {
-                fmt.Fprintf(w, "Successfully Uploaded File\n")
+       http.HandleFunc("/api/v1/upload", func(w http.ResponseWriter, r *http.Request) {            
+            var domain Domain.FileUploadInterface = Infrastructure.FileUploadLocalClient{}
+            if domain.FilesUpload(w, r) {
+                fmt.Fprintf(w, "Successfully Uploaded File(s)\n")
             }
        })
 }

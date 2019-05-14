@@ -1,5 +1,25 @@
 # Dive into Golang
 
+# Documentation 
+
+* [Go Tour](https://tour.golang.org/welcome/1)
+
+* [Go Short Guide](https://metanit.com/go/web/)
+
+* [Go Full Guide](https://metanit.com/go/tutorial/)
+
+* [Go Doc](https://golang.org/doc/)
+
+# Go in Visual Studio Code
+
+Using the Go extension for Visual Studio Code, you get language features like IntelliSense, code navigation, symbol search, bracket matching, snippets and many more that will help you in Golang development.
+
+* https://metanit.com/go/tutorial/1.4.php
+
+* https://rominirani.com/setup-go-development-environment-with-visual-studio-code-7ea5d643a51a
+
+* https://code.visualstudio.com/docs/languages/go
+
 # Go application with Docker
 
 ## Run from Dockerfile
@@ -20,6 +40,11 @@ Go to your browser and navigate to localhost:8080
 
 Go to your browser and navigate to localhost:8080
 
-# Go
+# Go Debugging
 
-....
+* 
+
+## Author
+[Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
+
+
