@@ -5,7 +5,7 @@ import (
     "net/http"
     "os"
     "./client"
-    "./server"
+    "./server/Domain"
 )
 
 func setupRoutes() {
@@ -14,7 +14,9 @@ func setupRoutes() {
        })
 
        http.HandleFunc("/api/v1/upload", func(w http.ResponseWriter, r *http.Request) {
-            server.FileUpload(w, r)
+            if server.FilesUpload(w, r) {
+                fmt.Fprintf(w, "Successfully Uploaded File\n")
+            }
        })
 }
 

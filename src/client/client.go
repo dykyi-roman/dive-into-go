@@ -5,9 +5,9 @@ import (
     "html/template"
 )
 
-const FileUploadTemplatePath string = "client/templates/index.html"
+const FileUploadTemplatePath string = "client/Templates/index.html"
 
-type ViewData struct{
+type ViewData struct {
     Title string
 }
 
