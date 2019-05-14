@@ -14,6 +14,8 @@
 
 Using the Go extension for Visual Studio Code, you get language features like IntelliSense, code navigation, symbol search, bracket matching, snippets and many more that will help you in Golang development.
 
+* [Go Plugin](https://github.com/Microsoft/vscode-go)
+
 * https://metanit.com/go/tutorial/1.4.php
 
 * https://rominirani.com/setup-go-development-environment-with-visual-studio-code-7ea5d643a51a
@@ -42,7 +44,7 @@ Go to your browser and navigate to localhost:8080
 
 # Go Debugging
 
-* 
+....
 
 ## Author
 [Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)

@@ -3,7 +3,7 @@ services:
   app:
     container_name: golang-app
     build: .
-    command: go run main.go
+    command: fresh
     volumes:
       - ./src:/go/src/app
     working_dir: /go/src/app

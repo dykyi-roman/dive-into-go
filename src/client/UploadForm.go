@@ -15,7 +15,7 @@ type UploadForm struct{}
 
 func (f UploadForm) FileUploadForm(w http.ResponseWriter, r *http.Request) {
      data := ViewData {
-        Title: "Multi upload file form",
+        Title: "vasvMulti upload file form",
      }
 
      tmpl, _ := template.ParseFiles(FileUploadTemplatePath)
