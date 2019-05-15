@@ -1,7 +1,7 @@
 FROM golang:alpine
 
-ADD ./src /go/src/app
-WORKDIR /go/src/app
+ADD ./src /go/src/github.com/dykyi-roman/dive-into-go
+WORKDIR /go/src/github.com/dykyi-roman/dive-into-go
 
 ENV PORT=3001
 

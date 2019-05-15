@@ -4,9 +4,9 @@ import (
     "fmt"
     "net/http"
     "os"
-    "./client"
-    "./server/Domain"    
-    "./server/Infrastructure" 
+    "github.com/dykyi-roman/dive-into-go/client"    
+    "github.com/dykyi-roman/dive-into-go/server/Domain"
+    "github.com/dykyi-roman/dive-into-go/server/Infrastructure"    
 )
 
 func setupRoutes() {

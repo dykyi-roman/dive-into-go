@@ -5,8 +5,8 @@ services:
     build: .
     command: fresh
     volumes:
-      - ./src:/go/src/app
-    working_dir: /go/src/app
+      - ./src:/go/src/github.com/dykyi-roman/dive-into-go
+    working_dir: /go/src/github.com/dykyi-roman/dive-into-go
     ports:
       - "8080:${PORT}"
     environment:
