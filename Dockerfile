@@ -10,5 +10,6 @@ RUN apk add git
 RUN go get -u github.com/gorilla/mux
 RUN go get github.com/sirupsen/logrus 
 RUN go get github.com/pilu/fresh
+RUN go get -u github.com/derekparker/delve/cmd/dlv
 
-CMD ["go", "run", "main.go"]
+CMD ["dlv", "debug", "go", "run", "main.go"]
