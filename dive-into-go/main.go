@@ -17,10 +17,24 @@ func setupRoutes() {
 	})
 
 	http.HandleFunc("/api/v1/upload", func(w http.ResponseWriter, r *http.Request) {
-		var domain Domain.FileUploadInterface = Infrastructure.FileUploadLocalClient{}
-		if domain.FilesUpload(w, r) {
+		var storage Domain.FileUploadInterface = Infrastructure.FileUploadLocalClient{}
+		if storage.FilesUpload(w, r) {
 			fmt.Fprintf(w, "Successfully Uploaded File(s)\n")
 		}
+	})
+
+	http.HandleFunc("/api/v1/db/insert", func(w http.ResponseWriter, r *http.Request) {
+		var db Domain.DataBaseInterface = Infrastructure.MySLQClient{}
+		if db.Insert(r) {
+			fmt.Fprintf(w, "Success Insert\n")
+		}
+	})
+
+	http.HandleFunc("/api/v1/db/get", func(w http.ResponseWriter, r *http.Request) {
+		var db Domain.DataBaseInterface = Infrastructure.MySLQClient{}
+
+		var payload = db.Get()
+		fmt.Println(payload)
 	})
 }
 

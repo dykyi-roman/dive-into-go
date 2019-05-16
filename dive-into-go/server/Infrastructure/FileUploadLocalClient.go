@@ -45,7 +45,6 @@ func (fulc FileUploadLocalClient) FilesUpload(w http.ResponseWriter, r *http.Req
 	if err := r.ParseMultipartForm(MAX_MEMORY); err != nil {
 		fmt.Println(err)
 		http.Error(w, err.Error(), http.StatusForbidden)
-
 	}
 
 	formdata := r.MultipartForm
