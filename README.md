@@ -48,7 +48,7 @@ Go to your browser and navigate to localhost:8080
 
 # Go Debugging
 
-....
+* [Debugging Go Code with Visual Studio Code](https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code)
 
 ## Author
 [Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
