@@ -10,11 +10,27 @@
 
         <title>{{ .Title}}</title>
     </head>
-    <body>
-        <form action="api/v1/upload" method="post" enctype="multipart/form-data">
-            <p>Select a file to upload:</p>
-            <p><input type="file" name="file-input" multiple="multiple"></p>
-            <p><input type="submit" value="Upload"></p>
-        </form>
-    </body>
+<body>
+    <h1>Dive into go</h1>
+    <div class="main">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-files-tab" data-toggle="pill" href="#pills-files" role="tab" aria-controls="pills-files" aria-selected="true">Files</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-db-tab" data-toggle="pill" href="#pills-db" role="tab" aria-controls="pills-db" aria-selected="false">DB</a>
+                </li>                
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-files" role="tabpanel" aria-labelledby="pills-files-tab">
+                        <form action="api/v1/upload" method="post" enctype="multipart/form-data">
+                            <p>Select a file to upload:</p>
+                            <p><input type="file" name="file-input" multiple="multiple"></p>
+                            <p><input type="submit" value="Upload"></p>
+                        </form>
+                </div>
+                <div class="tab-pane fade" id="pills-db" role="tabpanel" aria-labelledby="pills-db-tab">...</div>                
+              </div>
+    </div>                
+</body>
 </html>

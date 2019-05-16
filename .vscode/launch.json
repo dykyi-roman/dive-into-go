@@ -11,7 +11,7 @@
             "mode": "remote",
             "remotePath": "/go/src/github.com/dykyi-roman/dive-into-go",
             "port": 2345, // Docker
-            "host": "0.0.0.0", // Docker IP 
+            "host": "172.20.0.2", // Docker IP 
             "program": "${workspaceRoot}",
             "env": {},
             "args": [],

@@ -1,3 +1,41 @@
+# Dive into go
+
+### How to Write Go Code
+
+The first what you need to do its organize right folder structure.
+
+How its do it for you help doc [How to Write Go Code](https://golang.org/doc/code.html#GOPATH)
+
+Example: 
+
+````bash
+.
+├── bin
+├── pkg
+└── src
+    └── github.com
+        └── dykyi-roman
+            ├── dive-into-go
+            │   ├── client
+            │   │   └── Templates
+            │   ├── main.go
+            │   ├── server
+            │   │   ├── Domain
+            │   │   └── Infrastructure
+            │   ├── storage
+            │   └── tmp
+            ├── docker-compose.yml
+            ├── Dockerfile
+            └── README.md
+
+````
+
+### Code Example
+
+* Multiple File Upload
+
+* Work with DB
+
 # Documentation 
 
 * [How to Write Go Code](https://golang.org/doc/code.html#GOPATH)
@@ -24,7 +62,7 @@ Using the Go extension for Visual Studio Code, you get language features like In
 
 # Go application with Docker
 
-## Run from Dockerfile
+### Run from Dockerfile
 
 Build image from our Docker file by executing this line at your terminal:
 
@@ -36,7 +74,7 @@ After running this, a new docker image has been built with the name we provided 
 
 Go to your browser and navigate to localhost:8080
 
-## Run from Docker-compose
+### Run from Docker-compose
 
 `docker-compose up`
 
