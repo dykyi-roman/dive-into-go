@@ -38,8 +38,6 @@ Example:
 
 # Documentation 
 
-* [How to Write Go Code](https://golang.org/doc/code.html#GOPATH)
-
 * [Go Tour](https://tour.golang.org/welcome/1)
 
 * [Go Short Guide](https://metanit.com/go/web/)
