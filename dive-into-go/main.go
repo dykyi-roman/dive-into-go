@@ -24,14 +24,14 @@ func setupRoutes() {
 	})
 
 	http.HandleFunc("/api/v1/db/insert", func(w http.ResponseWriter, r *http.Request) {
-		var db Domain.DataBaseInterface = Infrastructure.MySLQClient{}
+		var db Domain.DataBaseInterface = Infrastructure.RedisClient{}
 		if db.Insert(r) {
 			fmt.Fprintf(w, "Success Insert\n")
 		}
 	})
 
 	http.HandleFunc("/api/v1/db/get", func(w http.ResponseWriter, r *http.Request) {
-		var db Domain.DataBaseInterface = Infrastructure.MySLQClient{}
+		var db Domain.DataBaseInterface = Infrastructure.RedisClient{}
 
 		var payload = db.Get()
 		fmt.Println(payload)
@@ -40,7 +40,7 @@ func setupRoutes() {
 
 func main() {
 	var PORT string
-	if PORT = os.Getenv("PORT"); PORT == "" {
+	if PORT = os.Getenv("GO_PORT"); PORT == "" {
 		fmt.Println("Port is not open!")
 		os.Exit(1)
 	}

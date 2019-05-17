@@ -29,8 +29,27 @@
                             <p><input type="submit" value="Upload"></p>
                         </form>
                 </div>
-                <div class="tab-pane fade" id="pills-db" role="tabpanel" aria-labelledby="pills-db-tab">...</div>                
+                <div class="tab-pane fade" id="pills-db" role="tabpanel" aria-labelledby="pills-db-tab">
+                    <form action="/api/v1/db/insert" method="post">
+                        <p>User form:</p>
+                        <div class="form-group">
+                          <label for="user-name">Name:</label>
+                          <p><input type="text" name="name-input" id="form-user-name"></p>
+                        </div>    
+                      
+                        <div class="form-group">
+                          <label for="form-user-age">Age:</label>
+                          <p><input type="number"  name="age-input" id="form-user-age"></p>
+                        </div>    
+                    
+                        <input type="submit" value="Save">
+                    </form>
+                      
+                    <form action="/api/v1/db/get" method="get">
+                      <p><input type="submit" value="Show All"></p>
+                    </form>                
               </div>
+          </ul>
     </div>                
 </body>
 </html>

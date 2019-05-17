@@ -55,8 +55,8 @@ func (obj RedisClient) Insert(r *http.Request) bool {
 	db := obj.dbConnect()
 
 	if r.Method == "POST" {
-		name := r.FormValue("name")
-		intAge, _ := strconv.Atoi(r.FormValue("age"))
+		name := r.FormValue("name-input")
+		intAge, _ := strconv.Atoi(r.FormValue("age-input"))
 
 		model := Domain.User{}
 		model.Id = 1
